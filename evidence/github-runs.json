@@ -1,0 +1,15 @@
+{
+  "author": "Cristofer Altamirano",
+  "ci": {
+    "id": 35006462769,
+    "conclusion": "success",
+    "head_sha": "76d7eb4340b3b0b89d5a4e56999ff0860b9b67e8",
+    "html_url": "https://github.com/CristoferAltamirano/-automatizacion-pruebas/actions/runs/35006462769"
+  },
+  "cd": {
+    "id": 35011758731,
+    "conclusion": "success",
+    "head_sha": "7874541ba740a7d79a9274b45a8944e9bffd6177",
+    "html_url": "https://github.com/CristoferAltamirano/-automatizacion-pruebas/actions/runs/35011758731"
+  }
+}

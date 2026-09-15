@@ -124,7 +124,11 @@ La ejecución local del 15 de septiembre de 2026 verificó 15 pruebas unitarias 
 - [Eventos de despliegue y rollback](evidence/deployment.log)
 - [Versiones y hashes comprobados](evidence/deployment-summary.json)
 
-Las capturas de GitHub Actions se agregan en `evidence/` tras verificar la ejecución remota. Los logs locales y los remotos se identifican por separado.
+Las capturas siguientes corresponden a ejecuciones reales de GitHub Actions. Los logs locales y los remotos se identifican por separado.
+
+![CI aprobado en GitHub Actions](evidence/github-ci.png)
+
+![CD y rollback aprobados en GitHub Actions](evidence/github-cd.png)
 
 ## Referencias técnicas
 
