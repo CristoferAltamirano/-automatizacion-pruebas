@@ -1,0 +1,345 @@
+﻿2026-09-15T19:13:12.4972659Z Current runner version: '2.337.0'
+2026-09-15T19:13:12.4995725Z ##[group]Runner Image Provisioner
+2026-09-15T19:13:12.4996399Z Hosted Compute Agent
+2026-09-15T19:13:12.4996918Z Version: 20260828.587
+2026-09-15T19:13:12.4997444Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-15T19:13:12.4998051Z Build Date: 2026-08-28T16:44:25Z
+2026-09-15T19:13:12.4998586Z Worker ID: {b3e36454-76d1-40cd-a784-d54c7a58e46b}
+2026-09-15T19:13:12.4999153Z Azure Region: westus3
+2026-09-15T19:13:12.4999592Z ##[endgroup]
+2026-09-15T19:13:12.5000696Z ##[group]Operating System
+2026-09-15T19:13:12.5001201Z Microsoft Windows Server 2025
+2026-09-15T19:13:12.5001695Z 10.0.26100
+2026-09-15T19:13:12.5002143Z Datacenter
+2026-09-15T19:13:12.5002595Z ##[endgroup]
+2026-09-15T19:13:12.5003048Z ##[group]Runner Image
+2026-09-15T19:13:12.5003500Z Image: windows-2025-vs2026
+2026-09-15T19:13:12.5004039Z Version: 20260907.229.1
+2026-09-15T19:13:12.5005170Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260907.229/images/windows/Windows2025-VS2026-Readme.md
+2026-09-15T19:13:12.5006417Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260907.229
+2026-09-15T19:13:12.5007188Z ##[endgroup]
+2026-09-15T19:13:12.5008075Z ##[group]GITHUB_TOKEN Permissions
+2026-09-15T19:13:12.5009638Z Contents: read
+2026-09-15T19:13:12.5010114Z Metadata: read
+2026-09-15T19:13:12.5010552Z ##[endgroup]
+2026-09-15T19:13:12.5012269Z Secret source: Actions
+2026-09-15T19:13:12.5013267Z Cache mode: write
+2026-09-15T19:13:12.5014036Z Prepare workflow directory
+2026-09-15T19:13:12.5300612Z Prepare all required actions
+2026-09-15T19:13:12.5359117Z Getting action download info
+2026-09-15T19:13:12.8648586Z Download action repository 'actions/checkout@v7.0.1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-09-15T19:13:12.9708728Z Download action repository 'actions/setup-java@v6.0.1' (SHA:de7274f081f381c8f8158605e0321c36c376e2e6)
+2026-09-15T19:13:13.8139821Z Download action repository 'actions/upload-artifact@v7.0.1' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-09-15T19:13:14.0247510Z Complete job name: build-and-test
+2026-09-15T19:13:14.1715131Z ##[group]Run actions/checkout@v7.0.1
+2026-09-15T19:13:14.1716416Z with:
+2026-09-15T19:13:14.1717120Z   repository: CristoferAltamirano/-automatizacion-pruebas
+2026-09-15T19:13:14.1723537Z   token: ***
+2026-09-15T19:13:14.1724089Z   ssh-strict: true
+2026-09-15T19:13:14.1724650Z   ssh-user: git
+2026-09-15T19:13:14.1725215Z   persist-credentials: true
+2026-09-15T19:13:14.1725838Z   clean: true
+2026-09-15T19:13:14.1726408Z   sparse-checkout-cone-mode: true
+2026-09-15T19:13:14.1727085Z   fetch-depth: 1
+2026-09-15T19:13:14.1727622Z   fetch-tags: false
+2026-09-15T19:13:14.1728186Z   show-progress: true
+2026-09-15T19:13:14.1728786Z   lfs: false
+2026-09-15T19:13:14.1729323Z   submodules: false
+2026-09-15T19:13:14.1729893Z   set-safe-directory: true
+2026-09-15T19:13:14.1730568Z   allow-unsafe-pr-checkout: false
+2026-09-15T19:13:14.1731477Z ##[endgroup]
+2026-09-15T19:13:14.3049236Z Syncing repository: CristoferAltamirano/-automatizacion-pruebas
+2026-09-15T19:13:14.3051651Z ##[group]Getting Git version info
+2026-09-15T19:13:14.3052678Z Working directory is 'D:\a\-automatizacion-pruebas\-automatizacion-pruebas'
+2026-09-15T19:13:14.3629626Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-09-15T19:13:14.7964133Z git version 2.55.0.windows.5
+2026-09-15T19:13:14.8022099Z ##[endgroup]
+2026-09-15T19:13:14.8036740Z Temporarily overriding HOME='D:\a\_temp\ff973cb3-6341-43d1-86b6-8befd6f435d0' before making global git config changes
+2026-09-15T19:13:14.8039626Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-15T19:13:14.8047647Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\-automatizacion-pruebas\-automatizacion-pruebas
+2026-09-15T19:13:14.8720982Z Deleting the contents of 'D:\a\-automatizacion-pruebas\-automatizacion-pruebas'
+2026-09-15T19:13:14.8726478Z ##[group]Determining repository object format
+2026-09-15T19:13:14.8728304Z ##[endgroup]
+2026-09-15T19:13:14.8729928Z ##[group]Initializing the repository
+2026-09-15T19:13:14.8737504Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\-automatizacion-pruebas\-automatizacion-pruebas
+2026-09-15T19:13:14.9480207Z Initialized empty Git repository in D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git/
+2026-09-15T19:13:14.9534154Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/CristoferAltamirano/-automatizacion-pruebas
+2026-09-15T19:13:15.0143277Z ##[endgroup]
+2026-09-15T19:13:15.0144298Z ##[group]Disabling automatic garbage collection
+2026-09-15T19:13:15.0151460Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-09-15T19:13:15.0410663Z ##[endgroup]
+2026-09-15T19:13:15.0412028Z ##[group]Setting up auth
+2026-09-15T19:13:15.0413658Z Removing SSH command configuration
+2026-09-15T19:13:15.0421642Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-09-15T19:13:15.0685484Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-09-15T19:13:16.6341620Z Removing HTTP extra header
+2026-09-15T19:13:16.6351077Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-15T19:13:16.6617228Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-09-15T19:13:17.1336049Z Removing includeIf entries pointing to credentials config files
+2026-09-15T19:13:17.1348261Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-15T19:13:17.1619084Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-09-15T19:13:17.6130521Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-09-15T19:13:17.6404915Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git.path D:\a\_temp\git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config
+2026-09-15T19:13:17.6685930Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git/worktrees/*.path D:\a\_temp\git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config
+2026-09-15T19:13:17.6998217Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config
+2026-09-15T19:13:17.7266956Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config
+2026-09-15T19:13:17.7532740Z ##[endgroup]
+2026-09-15T19:13:17.7533298Z ##[group]Fetching the repository
+2026-09-15T19:13:17.7544368Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +672088d3a9c1472e33a9dc7e59ba261931f3645e:refs/remotes/origin/main
+2026-09-15T19:13:19.5441872Z From https://github.com/CristoferAltamirano/-automatizacion-pruebas
+2026-09-15T19:13:19.5443175Z  * [new ref]         672088d3a9c1472e33a9dc7e59ba261931f3645e -> origin/main
+2026-09-15T19:13:19.5496142Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/main
+2026-09-15T19:13:19.5844187Z   origin/main
+2026-09-15T19:13:19.5894673Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/main
+2026-09-15T19:13:19.6257986Z 672088d3a9c1472e33a9dc7e59ba261931f3645e
+2026-09-15T19:13:19.6291422Z ##[endgroup]
+2026-09-15T19:13:19.6291758Z ##[group]Determining the checkout info
+2026-09-15T19:13:19.6292791Z ##[endgroup]
+2026-09-15T19:13:19.6300654Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-09-15T19:13:19.7690072Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-09-15T19:13:19.7968748Z ##[group]Checking out the ref
+2026-09-15T19:13:19.7976965Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-09-15T19:13:20.0339268Z Switched to a new branch 'main'
+2026-09-15T19:13:20.0418289Z branch 'main' set up to track 'origin/main'.
+2026-09-15T19:13:20.0461942Z ##[endgroup]
+2026-09-15T19:13:20.2555475Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-09-15T19:13:20.2794244Z 672088d3a9c1472e33a9dc7e59ba261931f3645e
+2026-09-15T19:13:20.3353558Z ##[group]Run actions/setup-java@v6.0.1
+2026-09-15T19:13:20.3353842Z with:
+2026-09-15T19:13:20.3354007Z   distribution: temurin
+2026-09-15T19:13:20.3354190Z   java-version: 17
+2026-09-15T19:13:20.3354340Z   cache: maven
+2026-09-15T19:13:20.3354484Z   java-package: jdk
+2026-09-15T19:13:20.3354642Z   check-latest: false
+2026-09-15T19:13:20.3354795Z   force-download: false
+2026-09-15T19:13:20.3354947Z   set-default: true
+2026-09-15T19:13:20.3355093Z   server-id: github
+2026-09-15T19:13:20.3355255Z   mvn-repositories-include-central: true
+2026-09-15T19:13:20.3355484Z   mvn-repositories-prioritize-central: true
+2026-09-15T19:13:20.3355698Z   overwrite-settings: true
+2026-09-15T19:13:20.3355872Z   cache-read-only: false
+2026-09-15T19:13:20.3356030Z   job-status: success
+2026-09-15T19:13:20.3358126Z   token: ***
+2026-09-15T19:13:20.3358292Z   show-download-progress: false
+2026-09-15T19:13:20.3358485Z   problem-matcher: true
+2026-09-15T19:13:20.3358663Z ##[endgroup]
+2026-09-15T19:13:20.4217586Z ##[group]Installed distributions
+2026-09-15T19:13:20.5000397Z Resolved Java 17.0.20+101 from tool-cache
+2026-09-15T19:13:20.5000784Z Setting Java 17.0.20+101 as the default
+2026-09-15T19:13:20.5017966Z 
+2026-09-15T19:13:20.5018740Z Java configuration:
+2026-09-15T19:13:20.5018994Z   Distribution: temurin
+2026-09-15T19:13:20.5019191Z   Version: 17.0.20+101
+2026-09-15T19:13:20.5019455Z   Path: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\17.0.20-101\x64
+2026-09-15T19:13:20.5019696Z 
+2026-09-15T19:13:20.5070786Z ##[endgroup]
+2026-09-15T19:13:20.5124323Z Creating settings.xml with server-id: github
+2026-09-15T19:13:20.5127500Z Creating toolchains.xml for JDK version 17 from temurin
+2026-09-15T19:13:20.5146508Z Writing to C:\Users\runneradmin\.m2\toolchains.xml
+2026-09-15T19:13:20.5153635Z Writing to C:\Users\runneradmin\.m2\settings.xml
+2026-09-15T19:13:20.5166962Z Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+2026-09-15T19:13:20.9350256Z Cache hit for: setup-java-Windows-x64-maven-4a23e539300d537a321f0bad35e1118c8fc1694f118d87e447911f406734c6b8
+2026-09-15T19:13:21.9517803Z Received 17136845 of 17136845 (100.0%), 21.3 MBs/sec
+2026-09-15T19:13:21.9519624Z Cache Size: ~16 MB (17136845 B)
+2026-09-15T19:13:21.9546396Z [command]"C:\Program Files\Git\usr\bin\tar.exe" -xf D:/a/_temp/ffd6093b-9b8c-4a73-8e94-f95648eba502/cache.tzst -P -C D:/a/-automatizacion-pruebas/-automatizacion-pruebas --force-local --use-compress-program "zstd -d"
+2026-09-15T19:13:23.1935395Z Cache restored successfully
+2026-09-15T19:13:23.1955735Z Cache restored from key: setup-java-Windows-x64-maven-4a23e539300d537a321f0bad35e1118c8fc1694f118d87e447911f406734c6b8
+2026-09-15T19:13:23.2249448Z ##[group]Run ./scripts/Invoke-CI.ps1
+2026-09-15T19:13:23.2249812Z [36;1m./scripts/Invoke-CI.ps1[0m
+2026-09-15T19:13:23.2914654Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-15T19:13:23.2915234Z env:
+2026-09-15T19:13:23.2915496Z   JAVA_HOME: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\17.0.20-101\x64
+2026-09-15T19:13:23.2915912Z   JAVA_HOME_17_X64: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\17.0.20-101\x64
+2026-09-15T19:13:23.2916256Z   MAVEN_ARGS: -ntp
+2026-09-15T19:13:23.2916428Z ##[endgroup]
+2026-09-15T19:13:23.7194564Z STAGE BUILD | 2026-09-15T19:13:23.7001652Z
+2026-09-15T19:13:28.9788239Z [INFO] Scanning for projects...
+2026-09-15T19:13:29.0441179Z [INFO] 
+2026-09-15T19:13:29.0445568Z [INFO] ------------------< cl.cristoferaltamirano:cotizador >------------------
+2026-09-15T19:13:29.0446374Z [INFO] Building Automatizacion de pruebas de un cotizador 1.1.0
+2026-09-15T19:13:29.0448618Z [INFO]   from pom.xml
+2026-09-15T19:13:29.0450218Z [INFO] --------------------------------[ jar ]---------------------------------
+2026-09-15T19:13:29.2773597Z [INFO] 
+2026-09-15T19:13:29.2774375Z [INFO] --- clean:3.2.0:clean (default-clean) @ cotizador ---
+2026-09-15T19:13:29.4260805Z [INFO] 
+2026-09-15T19:13:29.4262533Z [INFO] --- resources:3.4.0:resources (default-resources) @ cotizador ---
+2026-09-15T19:13:29.5480675Z [INFO] skip non existing resourceDirectory D:\a\-automatizacion-pruebas\-automatizacion-pruebas\src\main\resources
+2026-09-15T19:13:29.5509223Z [INFO] 
+2026-09-15T19:13:29.5510679Z [INFO] --- compiler:3.14.0:compile (default-compile) @ cotizador ---
+2026-09-15T19:13:29.8300534Z [INFO] Recompiling the module because of changed source code.
+2026-09-15T19:13:29.8369489Z [INFO] Compiling 2 source files with javac [debug release 17] to target\classes
+2026-09-15T19:13:31.3271738Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:31.3274993Z [INFO] BUILD SUCCESS
+2026-09-15T19:13:31.3280236Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:31.3281495Z [INFO] Total time:  2.411 s
+2026-09-15T19:13:31.3282382Z [INFO] Finished at: 2026-09-15T19:13:31Z
+2026-09-15T19:13:31.3283169Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:31.3928679Z STAGE UNIT TESTS | 2026-09-15T19:13:31.3922957Z
+2026-09-15T19:13:32.8882840Z [INFO] Scanning for projects...
+2026-09-15T19:13:32.9560836Z [INFO] 
+2026-09-15T19:13:32.9563292Z [INFO] ------------------< cl.cristoferaltamirano:cotizador >------------------
+2026-09-15T19:13:32.9564246Z [INFO] Building Automatizacion de pruebas de un cotizador 1.1.0
+2026-09-15T19:13:32.9565049Z [INFO]   from pom.xml
+2026-09-15T19:13:32.9565448Z [INFO] --------------------------------[ jar ]---------------------------------
+2026-09-15T19:13:33.1391013Z [INFO] 
+2026-09-15T19:13:33.1397749Z [INFO] --- resources:3.4.0:resources (default-resources) @ cotizador ---
+2026-09-15T19:13:33.3272531Z [INFO] skip non existing resourceDirectory D:\a\-automatizacion-pruebas\-automatizacion-pruebas\src\main\resources
+2026-09-15T19:13:33.3288384Z [INFO] 
+2026-09-15T19:13:33.3294349Z [INFO] --- compiler:3.14.0:compile (default-compile) @ cotizador ---
+2026-09-15T19:13:33.4924040Z [INFO] Nothing to compile - all classes are up to date.
+2026-09-15T19:13:33.4925820Z [INFO] 
+2026-09-15T19:13:33.4927621Z [INFO] --- resources:3.4.0:testResources (default-testResources) @ cotizador ---
+2026-09-15T19:13:33.4982694Z [INFO] skip non existing resourceDirectory D:\a\-automatizacion-pruebas\-automatizacion-pruebas\src\test\resources
+2026-09-15T19:13:33.4983723Z [INFO] 
+2026-09-15T19:13:33.5042188Z [INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ cotizador ---
+2026-09-15T19:13:33.5176281Z [INFO] Recompiling the module because of changed source code.
+2026-09-15T19:13:33.5274242Z [INFO] Compiling 2 source files with javac [debug release 17] to target\test-classes
+2026-09-15T19:13:34.2111631Z [INFO] 
+2026-09-15T19:13:34.2112618Z [INFO] --- surefire:3.5.3:test (default-test) @ cotizador ---
+2026-09-15T19:13:34.4917762Z [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+2026-09-15T19:13:34.6108551Z [INFO] 
+2026-09-15T19:13:34.6109132Z [INFO] -------------------------------------------------------
+2026-09-15T19:13:34.6109543Z [INFO]  T E S T S
+2026-09-15T19:13:34.6110084Z [INFO] -------------------------------------------------------
+2026-09-15T19:13:35.3502031Z [INFO] Running cl.cristoferaltamirano.QuoteServiceTest
+2026-09-15T19:13:35.6073792Z [INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.215 s -- in cl.cristoferaltamirano.QuoteServiceTest
+2026-09-15T19:13:35.6529026Z [INFO] 
+2026-09-15T19:13:35.6529401Z [INFO] Results:
+2026-09-15T19:13:35.6530096Z [INFO] 
+2026-09-15T19:13:35.6530489Z [INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+2026-09-15T19:13:35.6530890Z [INFO] 
+2026-09-15T19:13:35.6581499Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:35.6581988Z [INFO] BUILD SUCCESS
+2026-09-15T19:13:35.6582403Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:35.6773742Z [INFO] Total time:  2.803 s
+2026-09-15T19:13:35.6775176Z [INFO] Finished at: 2026-09-15T19:13:35Z
+2026-09-15T19:13:35.6776171Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:35.6900019Z STAGE INTEGRATION TESTS | 2026-09-15T19:13:35.6895611Z
+2026-09-15T19:13:37.1419336Z [INFO] Scanning for projects...
+2026-09-15T19:13:37.3003909Z [INFO] 
+2026-09-15T19:13:37.3006788Z [INFO] ------------------< cl.cristoferaltamirano:cotizador >------------------
+2026-09-15T19:13:37.3007687Z [INFO] Building Automatizacion de pruebas de un cotizador 1.1.0
+2026-09-15T19:13:37.3008265Z [INFO]   from pom.xml
+2026-09-15T19:13:37.3008793Z [INFO] --------------------------------[ jar ]---------------------------------
+2026-09-15T19:13:37.3577762Z [INFO] 
+2026-09-15T19:13:37.3578758Z [INFO] --- failsafe:3.5.3:integration-test (default-cli) @ cotizador ---
+2026-09-15T19:13:37.6352433Z [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+2026-09-15T19:13:37.7304966Z [INFO] 
+2026-09-15T19:13:37.7306813Z [INFO] -------------------------------------------------------
+2026-09-15T19:13:37.7307497Z [INFO]  T E S T S
+2026-09-15T19:13:37.7308002Z [INFO] -------------------------------------------------------
+2026-09-15T19:13:38.2606615Z [INFO] Running cl.cristoferaltamirano.ApiIT
+2026-09-15T19:13:39.8420790Z [INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.567 s -- in cl.cristoferaltamirano.ApiIT
+2026-09-15T19:13:40.3304012Z [INFO] 
+2026-09-15T19:13:40.3304293Z [INFO] Results:
+2026-09-15T19:13:40.3304521Z [INFO] 
+2026-09-15T19:13:40.3305483Z [INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+2026-09-15T19:13:40.3306076Z [INFO] 
+2026-09-15T19:13:40.3510126Z [INFO] 
+2026-09-15T19:13:40.3510544Z [INFO] --- failsafe:3.5.3:verify (default-cli) @ cotizador ---
+2026-09-15T19:13:40.8931323Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:40.8931867Z [INFO] BUILD SUCCESS
+2026-09-15T19:13:40.8932216Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:40.8942707Z [INFO] Total time:  3.779 s
+2026-09-15T19:13:40.8944396Z [INFO] Finished at: 2026-09-15T19:13:40Z
+2026-09-15T19:13:40.8945042Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:40.9305859Z STAGE PACKAGE | 2026-09-15T19:13:40.9300805Z
+2026-09-15T19:13:42.3664893Z [INFO] Scanning for projects...
+2026-09-15T19:13:42.4358886Z [INFO] 
+2026-09-15T19:13:42.4362751Z [INFO] ------------------< cl.cristoferaltamirano:cotizador >------------------
+2026-09-15T19:13:42.4365016Z [INFO] Building Automatizacion de pruebas de un cotizador 1.1.0
+2026-09-15T19:13:42.4366725Z [INFO]   from pom.xml
+2026-09-15T19:13:42.4367376Z [INFO] --------------------------------[ jar ]---------------------------------
+2026-09-15T19:13:42.6486009Z [INFO] 
+2026-09-15T19:13:42.6486468Z [INFO] --- resources:3.4.0:resources (default-resources) @ cotizador ---
+2026-09-15T19:13:42.8381271Z [INFO] skip non existing resourceDirectory D:\a\-automatizacion-pruebas\-automatizacion-pruebas\src\main\resources
+2026-09-15T19:13:42.8388223Z [INFO] 
+2026-09-15T19:13:42.8388853Z [INFO] --- compiler:3.14.0:compile (default-compile) @ cotizador ---
+2026-09-15T19:13:42.9855763Z [INFO] Nothing to compile - all classes are up to date.
+2026-09-15T19:13:42.9857221Z [INFO] 
+2026-09-15T19:13:42.9858177Z [INFO] --- resources:3.4.0:testResources (default-testResources) @ cotizador ---
+2026-09-15T19:13:42.9897247Z [INFO] skip non existing resourceDirectory D:\a\-automatizacion-pruebas\-automatizacion-pruebas\src\test\resources
+2026-09-15T19:13:42.9901789Z [INFO] 
+2026-09-15T19:13:42.9905001Z [INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ cotizador ---
+2026-09-15T19:13:43.0020790Z [INFO] Nothing to compile - all classes are up to date.
+2026-09-15T19:13:43.0021570Z [INFO] 
+2026-09-15T19:13:43.0022026Z [INFO] --- surefire:3.5.3:test (default-test) @ cotizador ---
+2026-09-15T19:13:43.1394036Z [INFO] Tests are skipped.
+2026-09-15T19:13:43.1394419Z [INFO] 
+2026-09-15T19:13:43.1394732Z [INFO] --- jar:3.4.2:jar (default-jar) @ cotizador ---
+2026-09-15T19:13:43.4069181Z [INFO] Building jar: D:\a\-automatizacion-pruebas\-automatizacion-pruebas\target\cotizador-1.1.0.jar
+2026-09-15T19:13:43.4853051Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:43.4854098Z [INFO] BUILD SUCCESS
+2026-09-15T19:13:43.4854546Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:43.4865583Z [INFO] Total time:  1.150 s
+2026-09-15T19:13:43.4868119Z [INFO] Finished at: 2026-09-15T19:13:43Z
+2026-09-15T19:13:43.4871475Z [INFO] ------------------------------------------------------------------------
+2026-09-15T19:13:43.5745494Z CI SUCCESS | unit=15 integration=12 | failures=0 errors=0
+2026-09-15T19:13:43.6288704Z ##[group]Run actions/upload-artifact@v7.0.1
+2026-09-15T19:13:43.6289004Z with:
+2026-09-15T19:13:43.6289226Z   name: ci-evidence-672088d3a9c1472e33a9dc7e59ba261931f3645e
+2026-09-15T19:13:43.6289644Z   path: target/*.jar
+target/surefire-reports/
+target/failsafe-reports/
+evidence/ci.log
+
+2026-09-15T19:13:43.6289988Z   if-no-files-found: warn
+2026-09-15T19:13:43.6290164Z   compression-level: 6
+2026-09-15T19:13:43.6290323Z   overwrite: false
+2026-09-15T19:13:43.6290487Z   include-hidden-files: false
+2026-09-15T19:13:43.6290659Z   archive: true
+2026-09-15T19:13:43.6290804Z env:
+2026-09-15T19:13:43.6291039Z   JAVA_HOME: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\17.0.20-101\x64
+2026-09-15T19:13:43.6291443Z   JAVA_HOME_17_X64: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\17.0.20-101\x64
+2026-09-15T19:13:43.6291751Z   MAVEN_ARGS: -ntp
+2026-09-15T19:13:43.6291906Z ##[endgroup]
+2026-09-15T19:13:43.7890741Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-09-15T19:13:43.7893601Z The least common ancestor is D:\a\-automatizacion-pruebas\-automatizacion-pruebas. This will be the root directory of the artifact
+2026-09-15T19:13:43.7917137Z With the provided path, there will be 9 files uploaded
+2026-09-15T19:13:43.7917877Z Artifact name is valid!
+2026-09-15T19:13:43.7918170Z Root directory input is valid!
+2026-09-15T19:13:44.1390788Z Uploading artifact: ci-evidence-672088d3a9c1472e33a9dc7e59ba261931f3645e.zip
+2026-09-15T19:13:44.1430348Z Beginning upload of artifact content to blob storage
+2026-09-15T19:13:44.4035976Z Uploaded bytes 14271
+2026-09-15T19:13:44.4622383Z Finished uploading artifact content to blob storage!
+2026-09-15T19:13:44.4623114Z SHA256 digest of uploaded artifact is 0add96c437bc2766ceeed838c0b30c91d1653395e68417eca5128801c7452458
+2026-09-15T19:13:44.4623700Z Finalizing artifact upload
+2026-09-15T19:13:44.8184442Z Artifact ci-evidence-672088d3a9c1472e33a9dc7e59ba261931f3645e successfully finalized. Artifact ID 10413509938
+2026-09-15T19:13:44.8185620Z Artifact ci-evidence-672088d3a9c1472e33a9dc7e59ba261931f3645e has been successfully uploaded! Final size is 14271 bytes. Artifact ID is 10413509938
+2026-09-15T19:13:44.8192129Z Artifact download URL: https://github.com/CristoferAltamirano/-automatizacion-pruebas/actions/runs/35012296717/artifacts/10413509938
+2026-09-15T19:13:44.8501734Z Post job cleanup.
+2026-09-15T19:13:44.9814325Z Cache hit occurred on the primary key setup-java-Windows-x64-maven-4a23e539300d537a321f0bad35e1118c8fc1694f118d87e447911f406734c6b8, not saving cache.
+2026-09-15T19:13:45.0085233Z Post job cleanup.
+2026-09-15T19:13:45.1808303Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-09-15T19:13:45.2044216Z git version 2.55.0.windows.5
+2026-09-15T19:13:45.2095635Z Temporarily overriding HOME='D:\a\_temp\391358bb-714b-45b4-a0e6-b7ef4c331303' before making global git config changes
+2026-09-15T19:13:45.2096484Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-15T19:13:45.2106265Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\-automatizacion-pruebas\-automatizacion-pruebas
+2026-09-15T19:13:45.2374520Z Removing SSH command configuration
+2026-09-15T19:13:45.2385436Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-09-15T19:13:45.2668075Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-09-15T19:13:45.7493824Z Removing HTTP extra header
+2026-09-15T19:13:45.7503548Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-15T19:13:45.7782665Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-09-15T19:13:46.2859135Z Removing includeIf entries pointing to credentials config files
+2026-09-15T19:13:46.2869028Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-15T19:13:46.3098902Z includeif.gitdir:D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git.path
+2026-09-15T19:13:46.3099660Z includeif.gitdir:D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git/worktrees/*.path
+2026-09-15T19:13:46.3100272Z includeif.gitdir:/github/workspace/.git.path
+2026-09-15T19:13:46.3100665Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-09-15T19:13:46.3143619Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git.path
+2026-09-15T19:13:46.3368964Z D:\a\_temp\git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config
+2026-09-15T19:13:46.3408990Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git.path D\:\\a\\_temp\\git\-credentials\-2e113857\-91ec\-4317\-85d3\-c6a1f815b259\.config
+2026-09-15T19:13:46.3716066Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git/worktrees/*.path
+2026-09-15T19:13:46.3935168Z D:\a\_temp\git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config
+2026-09-15T19:13:46.3972483Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/-automatizacion-pruebas/-automatizacion-pruebas/.git/worktrees/*.path D\:\\a\\_temp\\git\-credentials\-2e113857\-91ec\-4317\-85d3\-c6a1f815b259\.config
+2026-09-15T19:13:46.4237101Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-09-15T19:13:46.4461930Z /github/runner_temp/git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config
+2026-09-15T19:13:46.4499954Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-2e113857\-91ec\-4317\-85d3\-c6a1f815b259\.config
+2026-09-15T19:13:46.4774986Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-09-15T19:13:46.5002583Z /github/runner_temp/git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config
+2026-09-15T19:13:46.5042430Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-2e113857\-91ec\-4317\-85d3\-c6a1f815b259\.config
+2026-09-15T19:13:46.5305056Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-09-15T19:13:47.0001057Z Removing credentials config 'D:\a\_temp\git-credentials-2e113857-91ec-4317-85d3-c6a1f815b259.config'
+2026-09-15T19:13:47.0219957Z Cleaning up orphan processes
+

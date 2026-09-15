@@ -123,6 +123,10 @@ La ejecución local del 15 de septiembre de 2026 verificó 15 pruebas unitarias 
 - [Log CD](evidence/cd.log)
 - [Eventos de despliegue y rollback](evidence/deployment.log)
 - [Versiones y hashes comprobados](evidence/deployment-summary.json)
+- [Log remoto CI](evidence/github-ci.log)
+- [Log remoto CD](evidence/github-cd.log)
+- [Ejecución CI final aprobada](https://github.com/CristoferAltamirano/-automatizacion-pruebas/actions/runs/35012296717)
+- [Ejecución CD final aprobada](https://github.com/CristoferAltamirano/-automatizacion-pruebas/actions/runs/35012296821)
 
 Las capturas siguientes corresponden a ejecuciones reales de GitHub Actions. Los logs locales y los remotos se identifican por separado.
 
