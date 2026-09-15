@@ -1,0 +1,129 @@
+Autor: Cristofer Altamirano
+Inicio UTC: 2026-09-15T18:08:42.0796373Z
+STAGE BUILD | 2026-09-15T18:08:42.1331337Z
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< cl.cristoferaltamirano:cotizador >------------------
+[INFO] Building Automatizacion de pruebas de un cotizador 1.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ cotizador ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cotizador ---
+[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ cotizador ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug release 17] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.599 s
+[INFO] Finished at: 2026-09-15T15:08:52-03:00
+[INFO] ------------------------------------------------------------------------
+STAGE BUILD SUCCESS
+STAGE UNIT TESTS | 2026-09-15T18:08:52.4107884Z
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< cl.cristoferaltamirano:cotizador >------------------
+[INFO] Building Automatizacion de pruebas de un cotizador 1.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cotizador ---
+[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ cotizador ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ cotizador ---
+[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ cotizador ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ cotizador ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.cristoferaltamirano.QuoteServiceTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 s -- in cl.cristoferaltamirano.QuoteServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.392 s
+[INFO] Finished at: 2026-09-15T15:09:03-03:00
+[INFO] ------------------------------------------------------------------------
+STAGE UNIT TESTS SUCCESS
+STAGE INTEGRATION TESTS | 2026-09-15T18:09:03.3443922Z
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< cl.cristoferaltamirano:cotizador >------------------
+[INFO] Building Automatizacion de pruebas de un cotizador 1.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- failsafe:3.5.3:integration-test (default-cli) @ cotizador ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.cristoferaltamirano.ApiIT
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.916 s -- in cl.cristoferaltamirano.ApiIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.5.3:verify (default-cli) @ cotizador ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.957 s
+[INFO] Finished at: 2026-09-15T15:09:09-03:00
+[INFO] ------------------------------------------------------------------------
+STAGE INTEGRATION TESTS SUCCESS
+STAGE PACKAGE | 2026-09-15T18:09:09.6371938Z
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< cl.cristoferaltamirano:cotizador >------------------
+[INFO] Building Automatizacion de pruebas de un cotizador 1.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cotizador ---
+[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ cotizador ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ cotizador ---
+[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ cotizador ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ cotizador ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ cotizador ---
+[INFO] Building jar: C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\target\cotizador-1.1.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.708 s
+[INFO] Finished at: 2026-09-15T15:09:17-03:00
+[INFO] ------------------------------------------------------------------------
+STAGE PACKAGE SUCCESS
+CI SUCCESS | unit=15 integration=12 | failures=0 errors=0

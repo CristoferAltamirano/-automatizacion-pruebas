@@ -1,0 +1,14 @@
+{
+  "staging": "http://127.0.0.1:18080",
+  "automaticRollback": "SUCCESS",
+  "manualRollback": "SUCCESS",
+  "candidateSha256": "7BD4854C51A84B6E901313FBA893A2E28CB66A147B4688193032C85395E5E93A",
+  "restored": "1.0.0",
+  "executedUtc": "2026-09-15T18:13:30.3562623Z",
+  "acceptanceCasesPerRun": 6,
+  "author": "Cristofer Altamirano",
+  "candidate": "1.1.0",
+  "environment": "laboratorio local temporal",
+  "baselineSha256": "DA086E06501BFD77B9FE90235886EE1672F0CDCCEDA5E2D4DC1DA258F0EF3A3F",
+  "baseline": "1.0.0"
+}

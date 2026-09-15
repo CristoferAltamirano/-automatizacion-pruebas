@@ -1,0 +1,38 @@
+name: CD acceptance deploy and rollback
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: staging-demo
+  cancel-in-progress: false
+jobs:
+  staging-deployment:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Build and test before deployment
+        shell: pwsh
+        run: ./scripts/Invoke-CI.ps1
+      - name: Acceptance deployment manual and automatic rollback
+        shell: pwsh
+        run: ./scripts/Invoke-CD.ps1
+      - name: Preserve deployment evidence and release artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cd-evidence-${{ github.sha }}
+          path: |
+            artifacts/
+            evidence/
+            target/surefire-reports/
+            target/failsafe-reports/
