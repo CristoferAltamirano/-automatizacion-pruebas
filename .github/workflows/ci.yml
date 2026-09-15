@@ -1,7 +1,7 @@
 name: CI build and automated tests
 on:
   push:
-    branches: [main, 'codex/**']
+    branches: [main, 'feature/**']
   pull_request:
     branches: [main]
   workflow_dispatch:

@@ -1,23 +1,3 @@
-**********************
-PowerShell transcript start
-Start time: 20260915151312
-Username: CRISTOFER\crist
-RunAs User: CRISTOFER\crist
-Configuration Name: 
-Machine: CRISTOFER (Microsoft Windows NT 10.0.26200.0)
-Host Application: C:\Users\crist\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
-$taskProcesses = Get-CimInstance Win32_Process -Filter "Name = 'java.exe'" | Where-Object { $_.CommandLine -like '*nece*runtime*' -and $_.CommandLine -like '*cotizador-*' }; $taskProcesses | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }; & ./scripts/Invoke-CD.ps1 -Maven 'C:/Program Files/NetBeans-22/netbeans/java/maven/bin/mvn.cmd' -MavenRepository 'C:/Users/crist/Documents/Codex/2026-09-15/nece/work/maven-repository'
-Process ID: 37540
-PSVersion: 7.6.5
-PSEdition: Core
-GitCommitId: 7.6.5
-OS: Microsoft Windows 10.0.26200
-Platform: Win32NT
-PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
-PSRemotingProtocolVersion: 2.4
-SerializationVersion: 1.1.0.1
-WSManStackVersion: 3.0
-**********************
 Autor: Cristofer Altamirano
 STAGE BUILD RELEASE 1.0.0
 [INFO] Scanning for projects...
@@ -28,13 +8,13 @@ STAGE BUILD RELEASE 1.0.0
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO]
 [INFO] --- resources:3.3.1:resources (default-resources) @ cotizador ---
-[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\main\resources
+[INFO] skip non existing resourceDirectory .\src\main\resources
 [INFO]
 [INFO] --- compiler:3.14.0:compile (default-compile) @ cotizador ---
 [INFO] Nothing to compile - all classes are up to date.
 [INFO]
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ cotizador ---
-[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\test\resources
+[INFO] skip non existing resourceDirectory .\src\test\resources
 [INFO]
 [INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ cotizador ---
 [INFO] Nothing to compile - all classes are up to date.
@@ -43,7 +23,7 @@ STAGE BUILD RELEASE 1.0.0
 [INFO] Tests are skipped.
 [INFO]
 [INFO] --- jar:3.4.2:jar (default-jar) @ cotizador ---
-[INFO] Building jar: C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\target\cotizador-1.0.0.jar
+[INFO] Building jar: .\target\cotizador-1.0.0.jar
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -59,13 +39,13 @@ STAGE BUILD RELEASE 1.1.0
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO]
 [INFO] --- resources:3.3.1:resources (default-resources) @ cotizador ---
-[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\main\resources
+[INFO] skip non existing resourceDirectory .\src\main\resources
 [INFO]
 [INFO] --- compiler:3.14.0:compile (default-compile) @ cotizador ---
 [INFO] Nothing to compile - all classes are up to date.
 [INFO]
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ cotizador ---
-[INFO] skip non existing resourceDirectory C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\src\test\resources
+[INFO] skip non existing resourceDirectory .\src\test\resources
 [INFO]
 [INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ cotizador ---
 [INFO] Nothing to compile - all classes are up to date.
@@ -74,7 +54,7 @@ STAGE BUILD RELEASE 1.1.0
 [INFO] Tests are skipped.
 [INFO]
 [INFO] --- jar:3.4.2:jar (default-jar) @ cotizador ---
-[INFO] Building jar: C:\Users\crist\Documents\Codex\2026-09-15\nece\outputs\automatizacion-pruebas\target\cotizador-1.1.0.jar
+[INFO] Building jar: .\target\cotizador-1.1.0.jar
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -155,7 +135,3 @@ EXPECTED INCIDENT DETECTED; recovery checked next
 2026-09-15T18:13:30.3382441Z | STATUS UP version=1.0.0 sha256=DA086E06501BFD77B9FE90235886EE1672F0CDCCEDA5E2D4DC1DA258F0EF3A3F port=18080
 CD SUCCESS | deploy=1.1.0 manualRollback=1.0.0 automaticRollback=1.0.0 hashVerified=true
 2026-09-15T18:13:30.3965638Z | STOP SUCCESS
-**********************
-PowerShell transcript end
-End time: 20260915151330
-**********************

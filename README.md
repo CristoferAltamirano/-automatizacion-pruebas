@@ -37,20 +37,20 @@ artifacts/                     JAR 1.0.0 y JAR 1.1.0 del laboratorio local
 
 ## Flujo de ramas Trunk Based
 
-`main` es la única rama permanente. Las modificaciones se realizan en ramas cortas `codex/<cambio>`, se validan con CI y se integran rápidamente a `main`. Se identifica cada entrega estable con una etiqueta `vX.Y.Z`. No se mantienen ramas separadas para ambientes: el despliegue utiliza artefactos versionados.
+`main` es la única rama permanente. Las modificaciones se realizan en ramas cortas `feature/<cambio>`, se validan con CI y se integran rápidamente a `main`. Se identifica cada entrega estable con una etiqueta `vX.Y.Z`. No se mantienen ramas separadas para ambientes: el despliegue utiliza artefactos versionados.
 
 ```bash
 git switch main
 git pull --ff-only
-git switch -c codex/nuevo-cambio
+git switch -c feature/nuevo-cambio
 # Realizar el cambio y ejecutar las pruebas.
 git add .
 git commit -m "test: agregar validacion de un caso"
-git push -u origin codex/nuevo-cambio
+git push -u origin feature/nuevo-cambio
 # Abrir un pull request hacia main y revisar el resultado de CI.
 ```
 
-La implementación inicial se entrega con historial Git y la rama `codex/implementacion` integrada a `main`. La revisión por pull request es la regla para cambios posteriores; no se afirma una revisión externa de esta entrega individual. En un equipo, se recomienda exigir CI y revisión antes de integrar cambios mediante las reglas de protección de `main`.
+La implementación inicial se entrega con historial Git y la rama `feature/implementacion` integrada a `main`. La revisión por pull request es la regla para cambios posteriores; no se afirma una revisión externa de esta entrega individual. En un equipo, se recomienda exigir CI y revisión antes de integrar cambios mediante las reglas de protección de `main`.
 
 ## API y reglas del ejercicio
 
@@ -85,7 +85,7 @@ mvn -B -ntp test-compile failsafe:integration-test failsafe:verify
 
 `Invoke-CI.ps1` detiene el proceso ante un código de salida distinto de cero. Maven falla si no descubre pruebas. Surefire selecciona `*Test` y Failsafe selecciona `*IT`, evitando mezclar los niveles. Los resultados XML quedan en `target/surefire-reports/` y `target/failsafe-reports/`; el log del pipeline queda en `evidence/ci.log`.
 
-CI se ejecuta con cada push a `main` o `codex/**`, con pull requests hacia `main` y manualmente desde la pestaña Actions. El artefacto `ci-evidence-<commit>` conserva el JAR, los reportes y el log incluso cuando falla un stage.
+CI se ejecuta con cada push a `main` o `feature/**`, con pull requests hacia `main` y manualmente desde la pestaña Actions. El artefacto `ci-evidence-<commit>` conserva el JAR, los reportes y el log incluso cuando falla un stage.
 
 ## Ejecutar despliegue y rollback
 
